@@ -7,24 +7,12 @@
 <title>Cola Radar – Zero Fokus</title>
 <style>
 :root{--bg:#07080a;--panel:#111318;--panel2:#171a20;--line:#292d35;--text:#f5f7fa;--muted:#9299a4;--red:#ef3340;--red2:#ff5a64;--redsoft:rgba(239,51,64,.12);--green:#35d07f;--amber:#ffbd59}
-*{box-sizing:border-box}html{background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}body{margin:0;min-height:100vh;background:radial-gradient(circle at 85% 0%,rgba(239,51,64,.14),transparent 28rem),radial-gradient(circle at 8% 20%,rgba(255,255,255,.035),transparent 22rem),linear-gradient(180deg,#08090c,#07080a 65%)}button,input,select{font:inherit}.wrap{width:min(1180px,calc(100% - 28px));margin:0 auto}header{padding:24px 0 18px}.brand-row{display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:15px}.mark{width:66px;height:66px;border-radius:22px;position:relative;overflow:hidden;background:#0d0e12;border:1px solid #343944;box-shadow:0 12px 35px rgba(0,0,0,.35)}.mark:before,.mark:after{content:"";position:absolute;left:-16px;width:105px;height:16px;border-radius:999px;background:linear-gradient(90deg,#8e121b,#ff3b47,#bc1823);transform:rotate(-18deg)}.mark:before{top:20px}.mark:after{top:42px;opacity:.72}.brand-copy small{display:block;font-weight:900;letter-spacing:.24em;color:#ff6c75;font-size:.72rem}.brand-copy h1{margin:4px 0 0;font-size:clamp(2rem,5vw,3.6rem);letter-spacing:-.045em;line-height:.95}.badges{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}.badge{border:1px solid #343944;background:#12151a;border-radius:999px;padding:9px 12px;color:#cdd3da;font-size:.8rem;font-weight:800}.badge.red{color:#ff9ba1;border-color:rgba(239,51,64,.35);background:var(--redsoft)}.hero{margin-top:18px;border:1px solid #30353e;border-radius:30px;overflow:hidden;background:linear-gradient(135deg,rgba(239,51,64,.16),transparent 42%),linear-gradient(145deg,#14171c,#0f1115);box-shadow:0 24px 70px rgba(0,0,0,.3)}.hero-inner{padding:34px;display:grid;grid-template-columns:1.4fr .9fr;gap:28px;align-items:center}.kicker{color:#ff6670;font-size:.78rem;letter-spacing:.17em;font-weight:900;text-transform:uppercase}.hero h2{font-size:clamp(2.1rem,5.8vw,4.4rem);line-height:.98;margin:10px 0 14px;letter-spacing:-.05em;max-width:780px}.hero p{color:#a7aeb8;font-size:1.05rem;line-height:1.65;max-width:760px;margin:0}.hero-side{border:1px solid #333944;border-radius:24px;background:rgba(255,255,255,.025);padding:22px}.hero-side span{display:block;color:#969eaa;font-size:.82rem}.big-price{font-size:3rem;font-weight:950;color:#fff;margin:5px 0}.big-price em{font-style:normal;color:var(--red2)}.hero-side strong{display:block;font-size:1.03rem}.hero-side small{display:block;color:#8f97a2;margin-top:8px;line-height:1.45}.toolbar{display:grid;grid-template-columns:1fr auto auto;gap:12px;margin:18px 0}.field{border:1px solid #303640;background:#11141a;border-radius:18px;padding:14px 16px;color:#fff}select.field{min-width:190px}.btn{border:1px solid #3b414c;border-radius:18px;padding:13px 18px;background:#171a20;color:#fff;font-weight:850;cursor:pointer}.btn.active,.btn:hover{border-color:rgba(239,51,64,.55);background:rgba(239,51,64,.12)}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0}.stat{border:1px solid var(--line);background:var(--panel);border-radius:20px;padding:18px}.stat span{display:block;color:var(--muted);font-size:.78rem}.stat strong{display:block;font-size:1.65rem;margin-top:7px}.section-title{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;margin:30px 0 12px}.section-title h3{margin:0;font-size:1.5rem}.section-title span{color:var(--muted);font-size:.8rem}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.offer{border:1px solid var(--line);background:linear-gradient(145deg,#14171c,#101216);border-radius:24px;padding:20px;position:relative;overflow:hidden}.offer.best{border-color:rgba(239,51,64,.52);box-shadow:inset 0 0 0 1px rgba(239,51,64,.07)}.offer.best:before{content:"BESTER DEAL";position:absolute;right:-28px;top:17px;transform:rotate(34deg);background:var(--red);padding:5px 34px;font-size:.62rem;font-weight:950;letter-spacing:.08em}.offer-head{display:flex;justify-content:space-between;gap:18px;align-items:flex-start}.shop{font-size:1.2rem;font-weight:900}.source{font-size:.7rem;border:1px solid #363c47;padding:6px 8px;border-radius:999px;color:#aab1bb}.offer h4{margin:18px 0 5px;font-size:1.18rem}.meta{color:#9199a4;font-size:.86rem;line-height:1.5}.price-row{display:flex;align-items:end;justify-content:space-between;gap:14px;margin-top:17px}.price{font-size:2.2rem;font-weight:950;letter-spacing:-.04em}.unit{color:#969da7;font-size:.8rem;text-align:right}.pill{display:inline-flex;margin-top:12px;border-radius:999px;padding:6px 9px;font-size:.72rem;font-weight:800}.pill.now{background:rgba(53,208,127,.12);color:#78e6a8;border:1px solid rgba(53,208,127,.25)}.pill.future{background:rgba(255,189,89,.1);color:#ffd18c;border:1px solid rgba(255,189,89,.25)}.pill.uncertain{background:rgba(239,51,64,.08);color:#ff959d;border:1px solid rgba(239,51,64,.2)}.note{margin-top:13px;color:#8f97a2;font-size:.77rem;line-height:1.48}.retailers{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.retailer{border:1px solid var(--line);background:#101216;border-radius:17px;padding:14px;text-align:center;font-weight:850;color:#d9dde3}.retailer small{display:block;color:#777f8b;font-weight:600;margin-top:4px}.sources{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.source-card{border:1px solid var(--line);border-radius:20px;background:#101216;padding:18px}.source-card strong{display:block}.source-card p{color:#8f97a2;font-size:.84rem;line-height:1.5}.source-card a{color:#ff7c84;text-decoration:none;font-weight:800;font-size:.82rem}footer{color:#6f7782;font-size:.78rem;padding:30px 0 46px}@media(max-width:800px){.hero-inner{grid-template-columns:1fr}.toolbar{grid-template-columns:1fr 1fr}.toolbar .field:first-child{grid-column:1/-1}.grid{grid-template-columns:1fr}.retailers{grid-template-columns:repeat(2,1fr)}.sources{grid-template-columns:1fr}.stats{grid-template-columns:1fr}}
-
-.size-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.size-card{border:1px solid var(--line);background:#101216;border-radius:20px;padding:18px;text-align:left;cursor:pointer;color:var(--text);transition:.18s ease}
-.size-card:hover{transform:translateY(-1px);border-color:#3d444f}
-.size-card.active{border-color:rgba(239,51,64,.62);background:linear-gradient(145deg,rgba(239,51,64,.14),#111318);box-shadow:0 0 0 1px rgba(239,51,64,.07)}
-.size-card.has-offer{border-color:rgba(53,208,127,.38)}
-.size-card.has-offer.active{border-color:rgba(239,51,64,.62)}
-.size-card .size-main{font-size:1.38rem;font-weight:950;letter-spacing:-.02em}
-.size-card .size-type{display:block;color:var(--muted);font-size:.78rem;margin-top:3px}
-.size-card .size-status{display:inline-flex;margin-top:14px;border-radius:999px;padding:6px 9px;font-size:.7rem;font-weight:850}
-.size-card .size-status.yes{color:#78e6a8;background:rgba(53,208,127,.1);border:1px solid rgba(53,208,127,.23)}
-.size-card .size-status.no{color:#959da8;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.08)}
-.no-offer-box{grid-column:1/-1;border:1px dashed #333944;background:#0f1115;border-radius:24px;padding:32px;text-align:center}
-.no-offer-box strong{display:block;font-size:1.35rem}
-.no-offer-box span{display:block;color:var(--muted);margin-top:8px;line-height:1.5}
-
-@media(max-width:800px){.size-grid{grid-template-columns:repeat(2,1fr)}}
+*{box-sizing:border-box}html{background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}body{margin:0;min-height:100vh;background:radial-gradient(circle at 85% 0%,rgba(239,51,64,.14),transparent 28rem),radial-gradient(circle at 8% 20%,rgba(255,255,255,.035),transparent 22rem),linear-gradient(180deg,#08090c,#07080a 65%)}button,input,select{font:inherit}.wrap{width:min(1180px,calc(100% - 28px));margin:0 auto}header{padding:24px 0 18px}.brand-row{display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:15px}.mark{width:66px;height:66px;border-radius:22px;position:relative;overflow:hidden;background:#0d0e12;border:1px solid #343944;box-shadow:0 12px 35px rgba(0,0,0,.35)}.mark:before,.mark:after{content:"";position:absolute;left:-16px;width:105px;height:16px;border-radius:999px;background:linear-gradient(90deg,#8e121b,#ff3b47,#bc1823);transform:rotate(-18deg)}.mark:before{top:20px}.mark:after{top:42px;opacity:.72}.brand-copy small{display:block;font-weight:900;letter-spacing:.24em;color:#ff6c75;font-size:.72rem}.brand-copy h1{margin:4px 0 0;font-size:clamp(2rem,5vw,3.6rem);letter-spacing:-.045em;line-height:.95}.badges{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}.badge{border:1px solid #343944;background:#12151a;border-radius:999px;padding:9px 12px;color:#cdd3da;font-size:.8rem;font-weight:800}.badge.red{color:#ff9ba1;border-color:rgba(239,51,64,.35);background:var(--redsoft)}
+.hero{margin-top:18px;border:1px solid #30353e;border-radius:30px;overflow:hidden;background:linear-gradient(135deg,rgba(239,51,64,.16),transparent 42%),linear-gradient(145deg,#14171c,#0f1115);box-shadow:0 24px 70px rgba(0,0,0,.3)}.hero-inner{padding:34px}.kicker{color:#ff6670;font-size:.78rem;letter-spacing:.17em;font-weight:900;text-transform:uppercase}.hero h2{font-size:clamp(2.1rem,5.8vw,4.4rem);line-height:.98;margin:10px 0 14px;letter-spacing:-.05em;max-width:820px}.hero p{color:#a7aeb8;font-size:1.05rem;line-height:1.65;max-width:840px;margin:0}.week-preview{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:24px}.week-preview-card{border:1px solid #333944;border-radius:22px;background:rgba(255,255,255,.025);padding:19px}.week-preview-card.current{border-color:rgba(53,208,127,.28)}.week-preview-card.next{border-color:rgba(255,189,89,.28)}.week-preview-card span{display:block;color:#969eaa;font-size:.78rem}.week-preview-card strong{display:block;font-size:1.1rem;margin-top:6px}.week-preview-card .preview-price{font-size:2.2rem;font-weight:950;margin-top:8px}.week-preview-card small{display:block;color:#8f97a2;margin-top:7px;line-height:1.45}
+.toolbar{display:grid;grid-template-columns:1fr auto auto;gap:12px;margin:18px 0}.field{border:1px solid #303640;background:#11141a;border-radius:18px;padding:14px 16px;color:#fff}select.field{min-width:190px}.btn{border:1px solid #3b414c;border-radius:18px;padding:13px 18px;background:#171a20;color:#fff;font-weight:850;cursor:pointer}.btn.active,.btn:hover{border-color:rgba(239,51,64,.55);background:rgba(239,51,64,.12)}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0}.stat{border:1px solid var(--line);background:var(--panel);border-radius:20px;padding:18px}.stat span{display:block;color:var(--muted);font-size:.78rem}.stat strong{display:block;font-size:1.65rem;margin-top:7px}.section-title{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;margin:30px 0 12px}.section-title h3{margin:0;font-size:1.5rem}.section-title span{color:var(--muted);font-size:.8rem}
+.size-toolbar{display:flex;justify-content:flex-end;margin-bottom:10px}.size-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.size-card{border:1px solid var(--line);background:#101216;border-radius:20px;padding:18px;text-align:left;cursor:pointer;color:var(--text);transition:.18s ease}.size-card:hover{transform:translateY(-1px);border-color:#3d444f}.size-card.active{border-color:rgba(239,51,64,.62);background:linear-gradient(145deg,rgba(239,51,64,.14),#111318);box-shadow:0 0 0 1px rgba(239,51,64,.07)}.size-card.has-offer{border-color:rgba(53,208,127,.38)}.size-card.has-offer.active{border-color:rgba(239,51,64,.62)}.size-card .size-main{font-size:1.38rem;font-weight:950;letter-spacing:-.02em}.size-card .size-type{display:block;color:var(--muted);font-size:.78rem;margin-top:3px}.size-card .size-status{display:inline-flex;margin-top:14px;border-radius:999px;padding:6px 9px;font-size:.7rem;font-weight:850}.size-card .size-status.yes{color:#78e6a8;background:rgba(53,208,127,.1);border:1px solid rgba(53,208,127,.23)}.size-card .size-status.no{color:#959da8;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.08)}
+.week-block{margin-top:18px;border:1px solid var(--line);background:#0d0f13;border-radius:26px;padding:18px}.week-head{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:14px}.week-head-left{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.week-head h4{font-size:1.25rem;margin:0}.week-dates{color:#a0a7b1;font-size:.82rem}.week-chip{display:inline-flex;border-radius:999px;padding:6px 9px;font-size:.7rem;font-weight:900}.week-chip.now{background:rgba(53,208,127,.12);color:#78e6a8;border:1px solid rgba(53,208,127,.25)}.week-chip.future{background:rgba(255,189,89,.1);color:#ffd18c;border:1px solid rgba(255,189,89,.25)}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.offer{border:1px solid var(--line);background:linear-gradient(145deg,#14171c,#101216);border-radius:24px;padding:20px;position:relative;overflow:hidden}.offer.best{border-color:rgba(239,51,64,.52);box-shadow:inset 0 0 0 1px rgba(239,51,64,.07)}.offer.best:before{content:"BESTER DEAL";position:absolute;right:-28px;top:17px;transform:rotate(34deg);background:var(--red);padding:5px 34px;font-size:.62rem;font-weight:950;letter-spacing:.08em}.offer-head{display:flex;justify-content:space-between;gap:18px;align-items:flex-start}.shop{font-size:1.2rem;font-weight:900}.source{font-size:.7rem;border:1px solid #363c47;padding:6px 8px;border-radius:999px;color:#aab1bb}.offer h4{margin:18px 0 5px;font-size:1.18rem}.meta{color:#9199a4;font-size:.86rem;line-height:1.5}.price-row{display:flex;align-items:end;justify-content:space-between;gap:14px;margin-top:17px}.price{font-size:2.2rem;font-weight:950;letter-spacing:-.04em}.unit{color:#969da7;font-size:.8rem;text-align:right}.pill{display:inline-flex;margin-top:12px;margin-right:6px;border-radius:999px;padding:6px 9px;font-size:.72rem;font-weight:800}.pill.now{background:rgba(53,208,127,.12);color:#78e6a8;border:1px solid rgba(53,208,127,.25)}.pill.future{background:rgba(255,189,89,.1);color:#ffd18c;border:1px solid rgba(255,189,89,.25)}.pill.uncertain{background:rgba(239,51,64,.08);color:#ff959d;border:1px solid rgba(239,51,64,.2)}.pill.pack{background:rgba(255,255,255,.045);color:#cbd1d8;border:1px solid rgba(255,255,255,.1)}.note{margin-top:13px;color:#8f97a2;font-size:.77rem;line-height:1.48}.no-offer-box{grid-column:1/-1;border:1px dashed #333944;background:#0f1115;border-radius:24px;padding:28px;text-align:center}.no-offer-box strong{display:block;font-size:1.2rem}.no-offer-box span{display:block;color:var(--muted);margin-top:8px;line-height:1.5}.retailers{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.retailer{border:1px solid var(--line);background:#101216;border-radius:17px;padding:14px;text-align:center;font-weight:850;color:#d9dde3}.retailer small{display:block;color:#777f8b;font-weight:600;margin-top:4px}.sources{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.source-card{border:1px solid var(--line);border-radius:20px;background:#101216;padding:18px}.source-card strong{display:block}.source-card p{color:#8f97a2;font-size:.84rem;line-height:1.5}.source-card a{color:#ff7c84;text-decoration:none;font-weight:800;font-size:.82rem}footer{color:#6f7782;font-size:.78rem;padding:30px 0 46px}
+@media(max-width:800px){.week-preview{grid-template-columns:1fr}.toolbar{grid-template-columns:1fr 1fr}.toolbar .field:first-child{grid-column:1/-1}.grid{grid-template-columns:1fr}.retailers{grid-template-columns:repeat(2,1fr)}.sources{grid-template-columns:1fr}.stats{grid-template-columns:1fr}.size-grid{grid-template-columns:repeat(2,1fr)}.week-head{align-items:flex-start;flex-direction:column}}
 </style>
 </head>
 <body>
@@ -34,26 +22,61 @@
       <div class="mark" aria-hidden="true"></div>
       <div class="brand-copy"><small>ZERO FOKUS</small><h1>COLA RADAR</h1></div>
     </div>
-    <div class="badges"><div class="badge red">privates Projekt</div><div class="badge">v0.2.0</div></div>
+    <div class="badges"><div class="badge red">privates Projekt</div><div class="badge">v0.2.1</div></div>
   </div>
-  <section class="hero"><div class="hero-inner">
-    <div><div class="kicker">Coca-Cola Angebotsübersicht</div><h2>Wo ist meine Cola gerade günstig?</h2><p>Fokus auf Coca-Cola Zero und vergleichbare Coca-Cola-Aktionen. Keine riesige Produktdatenbank mehr, sondern nur das, was wirklich gebraucht wird: aktuelle Angebote, kommende Aktionen und ein schneller Händlervergleich.</p></div>
-    <div class="hero-side"><span>Nächster klar verifizierter Deal</span><div class="big-price"><em>0,99 €</em></div><strong>Lidl · 1,25 l · verschiedene Sorten</strong><small>12.10.–17.10.2026 · Quelle: OnlineProspekt. Zero ist in der Quellenangabe nicht einzeln bestätigt.</small></div>
-  </div></section>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="kicker">Coca-Cola Angebotsübersicht</div>
+      <h2>Diese Woche zählt. Die nächste darf trotzdem schon sichtbar sein.</h2>
+      <p>Aktuell gültige Angebote und bereits veröffentlichte Folgeangebote werden getrennt angezeigt. Jeder Treffer bekommt seinen echten Gültigkeitszeitraum, damit ein Preis vom nächsten Montag nicht so tut, als wäre er heute schon kaufbar.</p>
+      <div class="week-preview">
+        <div class="week-preview-card current">
+          <span>DIESE WOCHE · 05.10.–10.10.2026</span>
+          <div class="preview-price">1,19 €</div>
+          <strong>REWE · 1,25 l · verschiedene Sorten</strong>
+          <small>Heute noch gültig. Zusätzlich führt Lidl aktuell einen Coca-Cola-Mehrfachpack für 8,49 €.</small>
+        </div>
+        <div class="week-preview-card next">
+          <span>NÄCHSTE WOCHE · 12.10.–17.10.2026</span>
+          <div class="preview-price">0,99 €</div>
+          <strong>Lidl · 1,25 l · verschiedene Sorten</strong>
+          <small>Bereits veröffentlicht, aber erst ab Montag gültig.</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <div class="toolbar">
     <input id="postcode" class="field" value="68219" inputmode="numeric" maxlength="5" aria-label="Postleitzahl">
-    <select id="sizeFilter" class="field" aria-label="Gebinde filtern"><option value="all">Alle Gebinde</option><option value="single">Einzelflaschen</option><option value="pack">Multipacks / Kästen</option></select>
+    <select id="packFilter" class="field" aria-label="Gebindeart filtern">
+      <option value="all">Alle Gebindearten</option>
+      <option value="single">Einzelflaschen</option>
+      <option value="pack">Multipacks / Kästen</option>
+    </select>
     <button id="zeroToggle" class="btn active">Zero-Fokus AN</button>
   </div>
-  <div class="stats"><div class="stat"><span>Interessante Händler</span><strong>10</strong></div><div class="stat"><span>Verifizierter Bestpreis</span><strong>0,99 €</strong></div><div class="stat"><span>Datenstand</span><strong>10.10.2026</strong></div></div>
+
+  <div class="stats">
+    <div class="stat"><span>Interessante Händler</span><strong>10</strong></div>
+    <div class="stat"><span>Heute bester 1,25-l-Preis</span><strong>1,19 €</strong></div>
+    <div class="stat"><span>Datenstand</span><strong>10.10.2026</strong></div>
+  </div>
 </header>
+
 <main class="wrap">
-  <div class="section-title"><h3>Aktuell & demnächst</h3><span>Erster Datenstand · noch ohne automatisches Backend</span></div>
-  <section id="offers" class="grid"></section>
+  <div class="section-title"><h3>Gebindegrößen</h3><span>feste Zielgrößen für die automatische Erkennung</span></div>
+  <div class="size-toolbar"><button id="showAllSizes" class="btn active">Alle Größen</button></div>
+  <section id="sizeCards" class="size-grid"></section>
+
+  <div class="section-title"><h3 id="offerHeading">Aktuell & demnächst</h3><span id="offerSubline">Diese Woche zuerst, kommende Woche darunter</span></div>
+  <section id="weekOffers"></section>
+
   <div class="section-title"><h3>Meine Händler</h3><span>für die spätere automatische Suche</span></div>
   <section class="retailers">
     <div class="retailer">Lidl<small>aktiv</small></div><div class="retailer">ALDI Süd<small>aktiv</small></div><div class="retailer">REWE<small>aktiv</small></div><div class="retailer">Penny<small>aktiv</small></div><div class="retailer">Netto<small>aktiv</small></div><div class="retailer">Kaufland<small>aktiv</small></div><div class="retailer">EDEKA<small>aktiv</small></div><div class="retailer">Norma<small>aktiv</small></div><div class="retailer">Marktkauf<small>aktiv</small></div><div class="retailer">Globus<small>aktiv</small></div>
   </section>
+
   <div class="section-title"><h3>Geplante Preisquellen</h3><span>mehrere Quellen statt einer einzigen</span></div>
   <section class="sources">
     <div class="source-card"><strong>KaufDA</strong><p>Sehr brauchbar für aktuelle und kommende Prospektangebote nach Region.</p><a href="https://www.kaufda.de/Mannheim/Angebote/Coca-Cola" target="_blank" rel="noopener">Quelle öffnen →</a></div>
@@ -61,7 +84,9 @@
     <div class="source-card"><strong>OnlineProspekt</strong><p>Hilfreich, wenn Angebotsgröße und Aktionszeitraum konkret genannt werden.</p><a href="https://onlineprospekt.com/angebote/coca-cola-1-25l-lidl/" target="_blank" rel="noopener">Quelle öffnen →</a></div>
   </section>
 </main>
+
 <footer class="wrap">Cola Radar · privates Einkaufswerkzeug · kein offizielles Angebot von Coca-Cola oder den genannten Händlern</footer>
+
 <script>
 const sizes = [
   {id:"033can", label:"0,33 l", type:"Dose"},
@@ -72,52 +97,91 @@ const sizes = [
   {id:"20", label:"2,0 l", type:"Flasche"}
 ];
 
+const weeks = [
+  {id:"current", title:"Diese Woche", dates:"05.10.–10.10.2026", chip:"heute gültig", chipClass:"now"},
+  {id:"next", title:"Nächste Woche", dates:"12.10.–17.10.2026", chip:"vorab bekannt", chipClass:"future"}
+];
+
 const offers = [
   {
     shop:"REWE",
+    week:"current",
     sizeId:"125",
+    packType:"single",
     title:"Coca-Cola Einzelflasche",
-    meta:"1,25 l · Mannheim · aktuell",
+    meta:"1,25 l · Mannheim · 05.10.–10.10.2026",
     price:1.19,
     unit:"0,95 €/l",
-    source:"KaufDA",
+    source:"OnlineProspekt",
     status:"now",
-    label:"heute gültig",
+    label:"gültig bis 10.10.2026",
     zero:"likely",
-    note:"KaufDA nennt Coca-Cola zu 1,19 € und 0,95 €/l. Zero ist im Treffer nicht separat ausgewiesen."
+    note:"Verschiedene Sorten. Zero ist im Treffer nicht separat ausgewiesen."
   },
   {
     shop:"Lidl",
+    week:"current",
+    sizeId:null,
+    packType:"pack",
+    title:"Coca-Cola Mehrfachpack",
+    meta:"Mehrfachpack · 05.10.–10.10.2026",
+    price:8.49,
+    unit:"Quelle: 1,43 €/l",
+    source:"KaufDA / MeinProspekt",
+    status:"now",
+    label:"gültig bis 10.10.2026",
+    zero:"unknown",
+    note:"Aktueller Lidl-Treffer dieser Woche. Die ausgelesenen Quellen nennen 8,49 € und 1,43 €/l, extrahieren die genaue Flaschen-/Packgröße aber nicht zuverlässig. Deshalb wird er bewusst keinem der sechs Größenfilter zugerechnet."
+  },
+  {
+    shop:"Lidl",
+    week:"next",
     sizeId:"125",
+    packType:"single",
     title:"Coca-Cola · verschiedene Sorten",
     meta:"1,25 l · 12.10.–17.10.2026",
     price:0.99,
     unit:"0,79 €/l",
-    source:"OnlineProspekt",
+    source:"OnlineProspekt / KaufDA",
     status:"future",
-    label:"kommendes Angebot",
+    label:"gültig ab 12.10.2026",
     zero:"likely",
     best:true,
-    note:"Preis, Größe und Zeitraum sind konkret veröffentlicht. 'Verschiedene Sorten' lässt Zero wahrscheinlich erscheinen, ist aber nicht separat bestätigt."
+    note:"Preis, Größe und Zeitraum sind konkret veröffentlicht. 'Verschiedene Sorten' macht Zero wahrscheinlich, aber nicht ausdrücklich bestätigt."
   }
 ];
 
-const offersEl = document.getElementById("offers");
 const sizeCardsEl = document.getElementById("sizeCards");
+const weekOffersEl = document.getElementById("weekOffers");
 const zeroToggle = document.getElementById("zeroToggle");
 const showAllSizes = document.getElementById("showAllSizes");
 const offerHeading = document.getElementById("offerHeading");
 const offerSubline = document.getElementById("offerSubline");
+const packFilter = document.getElementById("packFilter");
 
 let selectedSize = "all";
 let zeroFocus = true;
+let selectedPackType = "all";
 
 function money(v){
   return v.toLocaleString("de-DE",{style:"currency",currency:"EUR"});
 }
 
+function visibleByPackType(o){
+  return selectedPackType === "all" || o.packType === selectedPackType;
+}
+
+function visibleBySize(o){
+  if(selectedSize === "all") return true;
+  return o.sizeId === selectedSize;
+}
+
+function filteredOffers(){
+  return offers.filter(o => visibleByPackType(o) && visibleBySize(o));
+}
+
 function offersForSize(sizeId){
-  return offers.filter(o=>o.sizeId===sizeId);
+  return offers.filter(o => o.sizeId === sizeId && visibleByPackType(o));
 }
 
 function renderSizes(){
@@ -138,42 +202,16 @@ function renderSizes(){
   sizeCardsEl.querySelectorAll("[data-size]").forEach(btn=>{
     btn.addEventListener("click",()=>{
       selectedSize = btn.dataset.size;
-      showAllSizes.classList.remove("active");
       render();
     });
   });
 
-  showAllSizes.classList.toggle("active", selectedSize==="all");
+  showAllSizes.classList.toggle("active", selectedSize === "all");
 }
 
-function renderOffers(){
-  const list = selectedSize==="all"
-    ? offers
-    : offers.filter(o=>o.sizeId===selectedSize);
-
-  if(selectedSize==="all"){
-    offerHeading.textContent = "Aktuell & demnächst";
-    offerSubline.textContent = "Alle bekannten Angebote";
-  }else{
-    const size = sizes.find(s=>s.id===selectedSize);
-    offerHeading.textContent = `${size.label} ${size.type}`;
-    offerSubline.textContent = list.length
-      ? `${list.length} bekanntes Angebot${list.length===1 ? "" : "e"}`
-      : "Kein Angebot bekannt";
-  }
-
-  if(!list.length){
-    offersEl.innerHTML = `
-      <div class="no-offer-box">
-        <strong>Kein Angebot bekannt</strong>
-        <span>Für diese Gebindegröße wurde aktuell noch kein passendes Coca-Cola-Angebot erkannt.</span>
-      </div>
-    `;
-    return;
-  }
-
-  offersEl.innerHTML = list.map(o => `
-    <article class="offer ${o.best ? "best":""}">
+function offerCard(o){
+  return `
+    <article class="offer ${o.best ? "best" : ""}">
       <div class="offer-head">
         <div class="shop">${o.shop}</div>
         <div class="source">${o.source}</div>
@@ -185,10 +223,49 @@ function renderOffers(){
         <div class="unit">${o.unit}</div>
       </div>
       <div class="pill ${o.status}">${o.label}</div>
-      ${zeroFocus ? `<div class="pill uncertain">${o.zero==="likely" ? "Zero wahrscheinlich enthalten" : "Zero nicht bestätigt"}</div>` : ""}
+      ${o.packType === "pack" ? `<div class="pill pack">Multipack / Kasten</div>` : ""}
+      ${zeroFocus ? `<div class="pill uncertain">${o.zero === "likely" ? "Zero wahrscheinlich enthalten" : "Zero nicht bestätigt"}</div>` : ""}
       <div class="note">${o.note}</div>
     </article>
-  `).join("");
+  `;
+}
+
+function renderOffers(){
+  const list = filteredOffers();
+
+  if(selectedSize === "all"){
+    offerHeading.textContent = "Aktuell & demnächst";
+  }else{
+    const size = sizes.find(s=>s.id === selectedSize);
+    offerHeading.textContent = `${size.label} ${size.type}`;
+  }
+
+  offerSubline.textContent = selectedSize === "all"
+    ? "Diese Woche zuerst, kommende Woche darunter"
+    : (list.length ? `${list.length} passendes Angebot${list.length===1 ? "" : "e"}` : "Kein Angebot bekannt");
+
+  weekOffersEl.innerHTML = weeks.map(week=>{
+    const weekList = list.filter(o=>o.week === week.id);
+    return `
+      <section class="week-block">
+        <div class="week-head">
+          <div class="week-head-left">
+            <h4>${week.title}</h4>
+            <span class="week-chip ${week.chipClass}">${week.chip}</span>
+          </div>
+          <div class="week-dates">${week.dates}</div>
+        </div>
+        <div class="grid">
+          ${weekList.length ? weekList.map(offerCard).join("") : `
+            <div class="no-offer-box">
+              <strong>Kein passendes Angebot bekannt</strong>
+              <span>Für diesen Filter ist in ${week.title.toLowerCase()} noch kein passender Coca-Cola-Treffer hinterlegt.</span>
+            </div>
+          `}
+        </div>
+      </section>
+    `;
+  }).join("");
 }
 
 function render(){
@@ -204,8 +281,13 @@ showAllSizes.addEventListener("click",()=>{
 zeroToggle.addEventListener("click",()=>{
   zeroFocus = !zeroFocus;
   zeroToggle.classList.toggle("active",zeroFocus);
-  zeroToggle.textContent = `Zero-Fokus ${zeroFocus ? "AN":"AUS"}`;
+  zeroToggle.textContent = `Zero-Fokus ${zeroFocus ? "AN" : "AUS"}`;
   renderOffers();
+});
+
+packFilter.addEventListener("change",()=>{
+  selectedPackType = packFilter.value;
+  render();
 });
 
 document.getElementById("postcode").addEventListener("change",e=>{
